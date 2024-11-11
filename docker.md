@@ -33,7 +33,8 @@ I double checked that Docker was now active by using the `sudo service docker st
 I decided to install OpenVAS/Greenbone vulnerability scanner with Docker. In order to do so, I created a docker-compose.yml file by doing the following:
 - I made a new directory called openvas-docker with `mkdir ~/openvas-docker` and entered this directory with `cd ~/openvas-docker`.
 - I created the yml file in this directory with `nano docker-compose.yml` where I was then able to edit this file. 
-- In this file, I wrote the following using the official Docker Compose file reference found here: https://docs.docker.com/reference/compose-file/.
+- In this file, I wrote the following using the official Docker Compose file reference found here: https://docs.docker.com/reference/compose-file/. Additionally, in this link provided from the slides, https://github.com/mikesplain/openvas-docker, I was able to reference the docker-compose.yml file.
+
 ```yaml
 version: '3'
 
