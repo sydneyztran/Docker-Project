@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+   openvas:
+    image: mikesplain/openvas
+    container_name: openvas
+    ports:
+      - "443:443"
+    restart: always
