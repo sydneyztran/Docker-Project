@@ -13,11 +13,11 @@ I started this project off by starting up my exisiting Ubuntu VM and immediately
 After doing so, I was then able to download Docker from the following: 
 - `sudo apt-get install docker.io`
 
-I then installed Docker Compose with:
+I then installed Docker Compose with the commands below, which was provided from the slides:
 - `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 - `sudo chmod +x /usr/local/bin/docker-compose` 
 
-I verified that Docker Compose was installed with:
+To verified that Docker Compose was installed, I then used:
 - `docker-compose --version`
 
 However, it was important to make sure that the Docker service was active, I made sure to check the status with the command:
@@ -26,7 +26,7 @@ However, it was important to make sure that the Docker service was active, I mad
 From reading this, I noticed that Docker was not active. Therefore, I made Docker active with: 
 - `sudo service docker start`
 
-I double checked that Docker was now active by using the `sudo service docker status` command again.  
+I double checked that Docker was now active by using the `sudo service docker status` command again where I was able to verify that it was ready.  
 
 ## Installing OpenVAS/Greenbone Vulnerability Scanner 
 
